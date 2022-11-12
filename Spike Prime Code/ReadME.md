@@ -23,3 +23,12 @@ We were told that every time the wheel turns 360 Degrees the robot travels the c
 `360 Degrees = 27.6cm`
 
 Using this info we created [Drive by Gyro](./FLL%20Driving%20and%20Turning.llsp)
+
+## Turn By Gyro
+Spike Prime comes with a turn block but we didn't understand it at first. 
+
+Instead we decided to create our own turn code using the gyro and decided that our robot should turn in place instead of driving around corners.
+This code was easy at first because you tell one wheel to turn forward and the other to turn backward until the Gyro says you have turned enough.
+We then realized we had to update it to include left and right turns. 
+We also learned that the Gyro does not record 360 degrees so we decided to break our turns up into 90 degree segments.
+This is what is in [Turn by Gyro](./FLL%20Driving%20and%20Turning.llsp)
